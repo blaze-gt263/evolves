@@ -1,0 +1,123 @@
+// products page style 
+
+.products-container{
+
+    .products-nav{
+        display: flex;
+        justify-content: space-between;
+
+        .heading p{
+            margin: 10px 25px;
+            margin-bottom: 0px;
+            margin-top: 15px;
+            font-size: small;
+            text-transform: capitalize;
+        }   
+        
+        .heading h2{
+            margin: 2px 20px;
+        }
+        .filter-buttons{
+            display: flex;
+            margin-top: 35px;
+            padding-right: 25px;
+        }
+        .filter-buttons img{
+            width: 18px;
+            height: 18px;
+            margin: 0px 10px ;
+        }
+        .filter-buttons span{
+            text-transform: capitalize;
+            margin: 0px 15px;
+            font-size: 18px;
+        }
+    }
+}
+
+.main-area{
+    display: grid;
+grid-template-columns: 180px 1fr;
+padding-left: 15px;
+
+    .side-bar-fliters{
+
+        padding-top: 25px;
+     
+        ul{
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgb(207, 203, 203);
+            opacity: 1;
+          
+        }
+        ul li{
+            padding: 5px 5px;
+            cursor: pointer;
+           
+        }
+
+        h3{
+            font-size: 18px;
+            font-weight:600;
+        }
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(100px,1fr)) ;
+        // column-gap: 10px;
+        row-gap: 25px;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+
+    .product{
+        // width: 380px;
+        padding: 15px;
+       
+        a{
+            text-decoration: none;
+            color: rgb(51, 50, 54);
+        
+        }
+        a:hover{
+            text-decoration: none;
+            color: rgb(51, 50, 54);
+        
+        }
+        img{
+            width: 100%;
+        }
+
+        .product-details h2{
+            text-decoration: none;
+            color: rgb(51, 50, 54);
+            font-size: 18px;
+            padding: 10px 5px;
+            padding-bottom: 0;
+         
+        }
+        .product-details h2:hover{
+            text-decoration: none;
+            color: rgb(51, 50, 54);
+        }
+        .product-details p{
+            // font-size: 14px;
+            padding-left: 10px;
+            color: rgb(124, 120, 120);
+        }
+
+        .product-details span{
+            // font-size: 14px;
+            padding-left: 10px;
+            color: rgb(124, 120, 120);
+        }
+        
+        .product-details span.product-prize{
+            // font-size: 14px;
+            padding-left: 10px;
+            color: rgb(39, 39, 41);
+        }
+    }
+}
+
